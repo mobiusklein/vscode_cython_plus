@@ -1,0 +1,32 @@
+{
+    "comments": {
+        // symbol used for single line comment. Remove this entry if your language does not support line comments
+        "lineComment": "#"
+    },
+    // symbols used as brackets
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"]
+    ],
+    // symbols that are auto closed when typing
+    "autoClosingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""],
+        ["'", "'"]
+    ],
+    // symbols that that can be used to surround a selection
+    "surroundingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""],
+        ["'", "'"]
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "^\\s*(cdef\\s*)?((class|((async\\s+)?(((cp|c)?def)(\\s+\\S+\\s+)?|with|for))|elif|else|except|finally|if|try|while)\\b.*)?:\\s*$",
+        "decreaseIndentPattern": "^\\s*(elif|else|except|finally)\\b.*:"
+    }
+}

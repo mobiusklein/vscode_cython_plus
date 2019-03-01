@@ -1,0 +1,36 @@
+{
+    "name": "cython_plus",
+    "displayName": "Cython+",
+    "description": "Cython Language Support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "cython",
+                "aliases": [
+                    "Cython",
+                    "cython"
+                ],
+                "extensions": [
+                    ".pyx",
+                    ".pyi",
+                    ".pxd"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "cython",
+                "scopeName": "source.cython",
+                "path": "./syntaxes/Cython.tmLanguage"
+            }
+        ]
+    }
+}
