@@ -48,6 +48,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>P(y|Y)(List|Dict|Set|Tuple|Sequence|Mapping|Object|Number|Float|)?_([^\s\(\[]+)</string>
+			<key>name</key>
+			<string>support.type.cpython_api</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b0b[01]+</string>
 			<key>name</key>
 			<string>constant.numeric.integer.binary.cython</string>
@@ -581,7 +587,7 @@
 		<key>c_types</key>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;!\.)\b(bint|(long\s)?double|enum|float|struct|union|void|const|fused|((un)?signed\s)?(char|((short|long(\slong)?)\s)?int|short|long(\slong)?))\b</string>
+			<string>(?&lt;!\.)\b(bint|(long\s)?double|enum|float|struct|union|void|const|fused|PyObject|size_t|ssize_t|Py_ssize_t|((un)?signed\s)?(char|((short|long(\slong)?)\s)?int|short|long(\slong)?))\b</string>
 			<key>name</key>
 			<string>support.type.c_types.cython</string>
 		</dict>
