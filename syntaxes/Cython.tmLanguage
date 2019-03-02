@@ -48,9 +48,15 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>P(y|Y)(List|Dict|Set|Tuple|Sequence|Mapping|Object|Number|Float|)?_([^\s\(\[]+)</string>
+			<string>P(y|Y)(List|Dict|Set|Tuple|Sequence|Mapping|Object|Number|Float|String|Bytes|Unicode|Str|)?_([^\s\(\)\[\]]+)</string>
 			<key>name</key>
 			<string>support.type.cpython_api</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(numpy|np)((\.|_)[^\s\(\)\[\]]+)?</string>
+			<key>name</key>
+			<string>support.type.numpy</string>
 		</dict>
 		<dict>
 			<key>match</key>
