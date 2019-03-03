@@ -48,7 +48,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>P(y|Y)(List|Dict|Set|Tuple|Sequence|Mapping|Object|Number|Float|String|Bytes|Unicode|Str|)?_([^\s\(\)\[\]]+)</string>
+			<string>P(y|Y)(List|Dict|Set|Tuple|Sequence|Mapping|Object|Number|Float|String|Bytes|Unicode|UNICODE|Str|Int|Long|Bool|Mem|Err|Weakref|Thread*|Lock|Function|Method|Slice|Iter|OS|Eval|DateTime|Instance|Arg|Import|Module|Type*|Capsule|Interpreter*|)?((_([^\s\(\)\[\]]+))|Object)</string>
 			<key>name</key>
 			<string>support.type.cpython_api</string>
 		</dict>
