@@ -54,6 +54,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>&lt;(\S+)&gt;</string>
+			<key>name</key>
+			<string>support.type.cast</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(numpy|np)((\.|_)[^\s\(\)\[\]]+)?</string>
 			<key>name</key>
 			<string>support.type.numpy</string>
